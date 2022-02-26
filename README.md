@@ -6,11 +6,11 @@
 
 ## FAILURE TO FILL OUT THE INFORMATION BELOW CORRECTLY WILL CAUSE POINTS TO BE DEDUCTED FROM YOUR ASSIGNMENT.
 
-## Student Name  : Name here
+## Student Name  : Ge Liu
 
-## Student ID    : ID here
+## Student ID    : 921573481
 
-## Student Email : Email here
+## Student Email : gliu8@mail.sfsu.edu
 
 ## Purpose of Repository
 
