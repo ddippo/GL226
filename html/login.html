@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
     <title>Login</title>
 </head>
 <body>
+    <div class="login">
     <header>
         <h1>Login Form</h1>
     </header>
     <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br>
-        <label for="pass">Password:</label>
-        <input type="password" id="pass" name="pass" required><br>
+        <section><label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br></section>
+
+        <section><label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required><br></section>
         <input type="submit" value="Login">
     </form>
+    </div>
     <footer>
     </footer>
 </body>

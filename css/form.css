@@ -1,0 +1,60 @@
+header {
+    border-radius: .25rem;
+    border: .1rem solid #c1b7f3;
+    box-shadow: 1px 1px 1px #9df589;
+    margin: 0 0 0 0;
+}
+
+body {
+    background-image: linear-gradient(110deg, #6ad3fa 60%, #fc5983 60%);
+    font-family: "Times New Roman";
+}
+
+.text-center {
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: #9e64f5;
+}
+.login {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #f6e96d;
+    padding: 50px;
+}
+.check {
+    text-align: center;
+}
+input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+}
+
+.registration {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f3f688;
+    padding: 20px;
+}
+
+.postimage {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f6c4c4;
+    padding: 20px;
+}
+.viewpost {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
