@@ -7,9 +7,10 @@
     <title>Registration</title>
 </head>
 <body>
-    <div class="registration">
+<script type="text/javascript" src="formValidation.js"></script>
+<div class="registration">
     <h1>User Registration Form</h1>
-    <form action = "login">
+    <form id="myForm" onsubmit="event.preventDefault(); validate();">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
         <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -29,6 +30,7 @@
         </a><br>
         <input type="submit">
     </form>
-    </div>
+</div>
 </body>
 </html>
+
