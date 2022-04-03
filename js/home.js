@@ -17,7 +17,6 @@ function loadDoc() {
             });
         }
     };
-
     ajaxCall.open("GET", "https://jsonplaceholder.typicode.com/albums/2/photos", true);
     ajaxCall.send();
 }
