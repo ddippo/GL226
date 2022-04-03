@@ -7,21 +7,21 @@
     <title>Registration</title>
 </head>
 <body>
-<script type="text/javascript" src="formValidation.js"></script>
-<div class="registration">
-    <h1>User Registration Form</h1>
-    <form id="myForm" onsubmit="event.preventDefault(); validate();">
+<script type = "text/javascript" src="/js/formValidation.js"></script>
+<div class="mail">
+    <h1>Registration Form</h1>
+    <form name="reg" action="#" onsubmit = "return(validate());">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
         <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required><br>
         <label for="pass">Password:&nbsp;&nbsp;</label>
         <input type="password" id="pass" name="pass" required><br>
         <label for="conpass">Confirm Password:</label>
         <input type="password" id="conpass" name="conpass" required><br>
         <label for="radio">Are you over 13 years of age?</label><br>
         <label for="radio">Yes</label>
-        <input type="radio" id="radio" name="radio" value = "Yes"required>
+        <input type="radio" id="radio" name="radio" value = "Yes" required>
         <label for="radio">No</label>
         <input type="radio" id="radioi" name="radio" value = "No" ><br>
         <a href="/">
@@ -33,4 +33,3 @@
 </div>
 </body>
 </html>
-
