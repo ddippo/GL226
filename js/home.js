@@ -23,15 +23,15 @@ function loadDoc() {
 }
 function fade(id) {
     let element = document.getElementById(id);
-    let op = 1;
+    let oc = 1;
     let timer = setInterval(function () {
-        if (op <= 0.1) {
+        if (oc <= 0.1) {
             clearInterval(timer);
             element.remove();
             num--;
             document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
         }
-        element.style.opacity = op;
-        op -= 0.1;
+        element.style.opacity = oc;
+        oc -= 0.1;
     }, 50);
 }
