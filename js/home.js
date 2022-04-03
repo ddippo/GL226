@@ -24,9 +24,9 @@ function loadDoc() {
 function fade(id) {
     let element = document.getElementById(id);
     let oc = 1;
-    let timer = setInterval(function () {
+    let fade = setInterval(function () {
         if (oc <= 0.1) {
-            clearInterval(timer);
+            clearInterval(fade);
             element.remove();
             num--;
             document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
