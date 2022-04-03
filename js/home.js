@@ -29,9 +29,7 @@ function fade(id) {
             clearInterval(timer);
             element.remove();
             num--;
-            document.getElementById(
-                "view"
-            ).innerHTML = `<div>${num} Photos</div>`;
+            document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
         }
         element.style.opacity = op;
         op -= 0.1;
