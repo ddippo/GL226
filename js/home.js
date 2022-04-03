@@ -23,9 +23,9 @@ function loadDoc() {
 function fade(id) {
     let element = document.getElementById(id);
     let op = 1;
-    let timer = setInterval(function () {
+    let x = setInterval(function () {
         if (op <= 0.1) {
-            clearInterval(timer);
+            clearInterval(x);
             element.remove();
             num--;
             document.getElementById(
