@@ -17,10 +17,10 @@ function loadDoc() {
             });
         }
     };
-
     ajaxCall.open("GET", "https://jsonplaceholder.typicode.com/albums/2/photos", true);
     ajaxCall.send();
 }
+
 function fade(id) {
     let element = document.getElementById(id);
     let oc = 1;
