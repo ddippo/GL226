@@ -13,7 +13,7 @@ function loadDoc() {
                 <img src=${obj.url} width="400" height="300"/>
                 <div class="de">${obj.title}</div>
                 </div>`;
-            });
+        });
     };
     ajaxCall.open("GET", "https://jsonplaceholder.typicode.com/albums/2/photos", true);
     ajaxCall.send();
