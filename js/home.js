@@ -12,7 +12,7 @@ function loadDoc() {
                     "photo"
                 ).innerHTML += `<div id=${obj.id} class="gallery" onclick="fade(${obj.id})">
                         <img src=${obj.url} width="400" height="300"/>
-                        <div class="desc">${obj.title}</div>
+                        <div class="de">${obj.title}</div>
                      </div>`;
             });
         }
