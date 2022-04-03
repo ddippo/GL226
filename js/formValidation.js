@@ -1,5 +1,5 @@
 function validate() {
-    let username = /^[a-zA-Z][a-zA-Z0-9]{3,20}/;
+    let username = /^[a-zA-Z][a-zA-Z0-9]{3,15}/;
     if(!document.reg.username.value.match(username)) {
         alert('Please use the correct username format')
         return false;
