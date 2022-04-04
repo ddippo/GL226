@@ -6,13 +6,10 @@ function loadDoc() {
         let x = JSON.parse(this.responseText);
         num = x.length;
         document.getElementById("view").innerHTML =`${num} Photos`;
-        x.forEach((obj) => {
-            document.getElementById(
-                "photo"
+        x.forEach((obj) => {document.getElementById(
+            "photo"
             ).innerHTML += `<div id=${obj.id} class="gallery" onclick="fade(${obj.id})">
-                <img src=${obj.url} width="400" height="300"/>
-                <div class="de">${obj.title}</div>
-                </div>`;
+                <img src=${obj.url} width="400" height="300"/><div class="de">${obj.title}</div></div>`;
         });
     };
     ajaxCall.open("GET", "https://jsonplaceholder.typicode.com/albums/2/photos", true);
@@ -22,7 +19,7 @@ function loadDoc() {
 function fade(id) {
     let element = document.getElementById(id);
     let oc = 1;
-    let fade = setInterval(function () {
+    let fade = setInterval(function() {
         if (oc <= 0.1) {
             clearInterval(fade);
             element.remove();
