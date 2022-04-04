@@ -18,12 +18,9 @@ function loadDoc() {
 
 function fade(id) {
     let element = document.getElementById(id);
-    let oc = 2;
     let fade = setInterval(function () {
-        oc -= 0.1;
         clearInterval(fade); element.remove();
         num--;
         document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
-        element.style.opacity = oc;
        },);
 }
