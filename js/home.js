@@ -1,4 +1,4 @@
-let num;
+var num;
 function loadDoc() {
     let ajaxCall = new XMLHttpRequest();
     ajaxCall.onload = function () {
@@ -18,15 +18,12 @@ function loadDoc() {
 
 function fade(id) {
     let element = document.getElementById(id);
-    let oc = 1;
-    let fade = setInterval(function() {
-        if (oc <= 0.1) {
-            clearInterval(fade);
-            element.remove();
-            num--;
-            document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
-        }
-        element.style.opacity = oc;
+    let oc = 2;
+    let fade = setInterval(function () {
         oc -= 0.1;
-    }, 50);
+        clearInterval(fade); element.remove();
+        num--;
+        document.getElementById("view").innerHTML = `<div>${num} Photos</div>`;
+        element.style.opacity = oc;
+       },);
 }
